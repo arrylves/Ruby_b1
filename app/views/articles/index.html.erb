@@ -1,16 +1,12 @@
 <h1>Hello World</h1>
 <%=link_to 'My Blog',controller: 'articles' %>
 <%=link_to 'New Article',new_article_path %>
-
-
 <h1>Listing articles</h1>
- 
 <table>
   <tr>
     <th>Title</th>
     <th>Text</th>
   </tr>
- 
   <% @articles.each do |article| %>
     <tr>
       <td><%= article.title %></td>
